@@ -1,0 +1,10 @@
+.card {
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 300px;
+  }
+}
+

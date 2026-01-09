@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"/>
+  <link rel="stylesheet" href="/pages/servicios.css" />
+  <link rel="stylesheet" href="/components/header.css" />
+  <link rel="stylesheet" href="/components/footer.css" />
+
+  <meta name="description" content="Desarrollo web, inteligencia artificial y automatización de sistemas a medida." />
+
+
+</head>
+<body>
+      <header id="header"></header>
+
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Escribinos</h1>
+      <p class="subtitle">Dejanos tu mensaje y te responderemos pronto.</p>
+
+      <!-- FORM -->
+      <form id="contact-form">
+
+        <!-- NOMBRE -->
+        <div class="field">
+          <label class="label">Nombre</label>
+          <div class="control">
+            <input
+              id="name"
+              class="input"
+              type="text"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input
+              id="email"
+              class="input"
+              type="email"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- MENSAJE -->
+        <div class="field">
+          <label class="label">Mensaje</label>
+          <div class="control">
+            <textarea
+              id="message"
+              class="textarea"
+              placeholder="Escribí tu mensaje"
+              required
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- BOTONES -->
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link" type="submit">
+              Enviar
+            </button>
+          </div>
+          <div class="control">
+            <button class="button is-light" type="reset">
+              Cancelar
+            </button>
+          </div>
+        </div>
+
+        <!-- ESTADO -->
+        <p id="form-status" class="mt-3"></p>
+
+      </form>
+    </div>
+  </section>
+    <footer id="footer"></footer>
+
+
+  <script src="/pages/contacto.js"></script>
+  <script src="/components/header.js"></script>
+  <script src="/components/footer.js"></script>
+</body>
+</html>

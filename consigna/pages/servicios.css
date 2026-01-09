@@ -1,0 +1,30 @@
+.service{
+      padding: 80px;
+}
+
+.service__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  
+}
+
+.card {
+  background: #020617;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .service__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .service__grid {
+    grid-template-columns: 1fr;
+  }
+}
